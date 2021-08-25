@@ -21,7 +21,7 @@ def predict():
 
     prediction = loadedModel.predict([[spx,usd,slv,usd]])
 
-    return render_template('gold_value.html', gold_output= prediction)
+    return render_template('gold_value.html', gold_output= prediction, Spx= spx, Uso=uso, Slv=slv, Usd= usd)
 
 
 
